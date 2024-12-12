@@ -22,44 +22,41 @@ let computerScore = 0
 
 function playRound(humanChoice,computerChoice){
 
-    console.log(`Your choice : ${humanChoice}`)
-    console.log(`computer choice : ${computerChoice}`)
+    alert(`computer choice : ${computerChoice}`)
 
 
     if (humanChoice == computerChoice){
-        console.log("Its a draw")
+        alert("Its a draw")
     }
     else{
         if(humanChoice == "rock" && computerChoice=="paper"){
-            console.log("You lose! paper beats rock")
+            alert("You lose! paper beats rock")
             computerScore++
         }
         else if(humanChoice == "paper" && computerChoice=="rock"){
-            console.log("You Won! paper beats rock")
+            alert("You Won! paper beats rock")
             humanScore++
         }
         else if(humanChoice == "rock" && computerChoice=="scissor"){
-            console.log("You Won! rock beats scissor")
+            alert("You Won! rock beats scissor")
             humanScore++
         }
         else if(humanChoice == "scissor" && computerChoice=="rock"){
-            console.log("You Lose! rock beats scissor")
+            alert("You Lose! rock beats scissor")
             computerScore++
         }
         else if(humanChoice == "paper" && computerChoice=="scissor"){
-            console.log("You Lose! scissor beats paper")
+            alert("You Lose! scissor beats paper")
             humanScore++
         }
         else if(humanChoice == "scissor" && computerChoice=="paper"){
-            console.log("You Lose! scissor beats rock")
+            alert("You Lose! scissor beats rock")
             computerScore++
         }
         else{
-            console.log("Check Entered input")
+            alert("Check Entered input")
         }
     }
-    console.log(`humanscore = ${humanScore}`)
-    console.log(`computerscore = ${computerScore}`)
 }
 
 function playGame(){
@@ -69,13 +66,15 @@ function playGame(){
 }
 
 playGame()
+alert(`your score = ${humanScore}`)
+alert(`bot score = ${computerScore}`)
 if(humanScore > computerScore){
-    console.log("You won the game")
+    alert("You won the game")
 }
 else if(humanScore<computerScore){
-    console.log("You lost the game")
+    alert("You lost the game")
 }
 else{
-    console.log("Game tied")
+    alert("Game tied")
 }
 
