@@ -1,5 +1,5 @@
 function getComputerChoice(){
-    n = Math.floor(Math.random()*3)
+    let n = Math.floor(Math.random()*3)
 
     if(n==0){
         return "rock"
@@ -10,4 +10,9 @@ function getComputerChoice(){
     else{
         return "scissor"
     }
+}
+
+function getHumanChoice(){
+    let humanChoice = prompt("select rock/paper/scissor : ")
+    return humanChoice
 }
