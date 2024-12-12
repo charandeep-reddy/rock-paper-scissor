@@ -16,3 +16,6 @@ function getHumanChoice(){
     let humanChoice = prompt("select rock/paper/scissor : ")
     return humanChoice
 }
+
+let humanScore = 0
+let computerScore = 0
